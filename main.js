@@ -390,10 +390,8 @@ fs.writeFile('./index.html', htmlContent, err => {
      // file written successfully
      //creates stylesheets and scripts in assets folder
      fs.mkdir("./assets/stylesheets/", function(){
-        console.log("Stylesheet folder created!")
     });
     fs.mkdir("./assets/scripts/", function(){
-        console.log("Scripts folder created!")
     });
 });
 
