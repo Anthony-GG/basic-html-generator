@@ -379,7 +379,6 @@ template {
 
 //creates asset folder
 fs.mkdir("./assets/", function(){
-    console.log("Stylesheet folder created!")
 });
 
 
