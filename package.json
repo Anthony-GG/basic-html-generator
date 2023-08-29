@@ -1,0 +1,14 @@
+{
+  "name": "basic-html-generator",
+  "version": "1.0.0",
+  "description": "A program to generate a basic HTML layout",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anthony Iacano",
+  "license": "MIT",
+  "dependencies": {
+  }
+}
