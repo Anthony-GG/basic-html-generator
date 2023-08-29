@@ -1,4 +1,5 @@
 import fs from 'fs';
+import inquirer from 'inquirer';
 
 
 //Variables containing file content
