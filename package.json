@@ -10,5 +10,6 @@
   "author": "Anthony Iacano",
   "license": "MIT",
   "dependencies": {
+    "inquirer": "^9.2.10"
   }
 }

@@ -417,3 +417,33 @@ setTimeout(()=>{
          // file written successfully
     });
 }, "1000");
+
+inquirer
+  .prompt([
+    /* Pass your questions in here */
+    {
+    type: 'input',
+    message: `Delete generator files? ('y' or 'n')`,
+    name: 'reply',
+  },
+  ])
+  .then((answers) => {
+    // Use user feedback for... whatever!!\
+    reply = reply.toLowerCase();
+    if (reply == 'y'){
+      fs.unlinkSync("./README.MD")
+      fs.unlinkSync("./package.json")
+      fs.unlinkSync("./main.js")
+      fs.unlinkSync("./createHTML.bat")
+      fs.unlinkSync("./package-lock.json")
+      fs.unlinkSync("./node_modules/")
+      
+    }
+  })
+  .catch((error) => {
+    if (error.isTtyError) {
+      // Prompt couldn't be rendered in the current environment
+    } else {
+      // Something else went wrong
+    }
+  });
